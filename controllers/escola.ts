@@ -50,7 +50,7 @@ export async function listEscolas(req: Request, res: Response) {
 
 export async function saveEscolas(req: Request, res: Response) {
   const escolas = req.body;
-  escola.id = Math.floor(Math.random() * 50)
+  escolas.id = Math.floor(Math.random() * 50)
   escolas.push(escolas)
   res.status(201).json(escolas);
 }
